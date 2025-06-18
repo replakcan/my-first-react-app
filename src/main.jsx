@@ -1,11 +1,12 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import Greeting from './Greeting.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import ClassInput from "./class-components/ClassInput.jsx";
+import FunctionalInput from "./class-components/FunctionalInput.jsx";
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Greeting />
-  </StrictMode>,
-)
+    <ClassInput name={"Class Input"} />
+    <FunctionalInput name={"Functional Input"} />
+  </StrictMode>
+);
