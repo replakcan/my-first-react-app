@@ -1,4 +1,4 @@
-const Item = ({ country }) => {
+export const Item = ({ country }) => {
   return (
     <button className="county-item">
       <img src={country.flagUrl} />
@@ -7,7 +7,7 @@ const Item = ({ country }) => {
   );
 };
 
-const CountriesList = ({ countries }) => {
+export const CountriesList = ({ countries }) => {
   return (
     <div>
       {countries.map((country) => {
@@ -22,7 +22,7 @@ const CountriesList = ({ countries }) => {
 // React.memo kullanırsam gereksiz re-render'ların da önüne geçebilirim.
 
 // index yerine random id kullanırsam:
-const CountriesListWithRandomKey = ({ countries }) => {
+export const CountriesListWithRandomKey = ({ countries }) => {
   return (
     <div>
       {countries.map((country) => (
